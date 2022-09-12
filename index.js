@@ -54,21 +54,20 @@ const promptUser = data => {
     },
     {
       type: "input",
-      name: "testInst",
+      name: "test",
       message: "Please provide any test instructions here",
     },
     {
-      type: "checkbox",
+      type: "list",
       name: "license",
       message: "What license will be associated with this project?",
       choices: [
-        "The Unlicense",
-        "Boost Software License",
+        "Unlicense",
         "MIT License",
-        "Apache License",
+        "Apache License 2.0",
         "Mozilla Public License",
-        "GNU AGP",
-      ],
+        "None" 
+      ]
     },
     {
       type: "input",
@@ -109,6 +108,7 @@ init();
 
 promptUser()
 .then(data => {
+    console.log(data);
     return generateFile(data);
 })
 .then(pageRead => {

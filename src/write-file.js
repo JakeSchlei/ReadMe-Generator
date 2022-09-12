@@ -10,7 +10,7 @@ const writeFile = (fileContent) => {
 
       resolve({
         ok: true,
-        message: "File Created!",
+        message: "README created! Visit the file to see the results!",
       });
     });
   });
