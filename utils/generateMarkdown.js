@@ -9,9 +9,9 @@ function renderLicenseBadge(license) {
     return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
   } else if (license === 'Mozilla Public License') {
     return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)';
-  } else {
+  } 
     return '';
-  }
+  
 
 }
 
@@ -20,9 +20,9 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license === 'None') {
     return '';
-  } else {
-    return '- [License](#License)'
   }
+    return '- [License](#License)'
+  
 }
 
 // TODO: Create a function that returns the license section of README
@@ -30,47 +30,50 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license === "None") {
     return "";
-  } else {
-    return `## [License](#License)
-    This project is under ${license}`;
-  }
+  } 
+  console.log(license);
+    return '## License \n This project is licensed under ' + license;
+  
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return ` ${renderLicenseBadge(data.license)}
+  return ` 
   
   # ${data.title}
+  
+  ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [Contributions](#Contributions)
-  - [Tests](#Tests)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributions](#contributions)
+  - [Tests](#tests)
   ${renderLicenseLink(data.license)}
-  - [Questions](#Questions)
+  - [Questions](#questions)
 
 
-  ## [Description](#Description)
+  ## Description
   ${data.description}
 
-  ## [Installation](#Installation)
+  ## Installation
   ${data.install}
 
-  ## [Usage](#Usage)
+  ## Usage
   ${data.usageInfo}
 
-  ## [Contributions](#Contributions) 
+  ## Contributions
   ${data.guidelines}
 
-  ## [Tests](#Tests)
+  ## Tests
   ${data.test}
 
   ${renderLicenseSection(data.license)}
-  ${renderLicenseBadge(data.license)}
 
-  ## [Questions](#Questions)
+  
+
+  ## Questions
   Please Use the following links to contact me!
   
   [Github](https://github.com/${data.github})

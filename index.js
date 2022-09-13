@@ -25,22 +25,9 @@ const promptUser = data => {
       message: "Provide some information about the project",
     },
     {
-      type: "confirm",
-      name: "installInstructions",
-      message: "Does this project require any installation instructions?",
-      default: true,
-    },
-    {
       type: "input",
       name: "install",
       message: "Please provide the install instructions for the project",
-      when: ({ installInstructions }) => {
-        if (installInstructions) {
-          return true;
-        } else {
-          return false;
-        }
-      },
     },
     {
       type: "input",
