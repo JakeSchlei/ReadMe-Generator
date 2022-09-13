@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === 'Unlicense') {
+  if (license === 'The Unlicense') {
     return '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)';
   } else if (license === 'MIT License') {
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -21,8 +21,22 @@ function renderLicenseLink(license) {
   if (license === 'None') {
     return '';
   }
-    return '- [License](#License)'
+    return '- [License](#license)'
   
+}
+
+function renderLicenseURL(license) {
+  if (license === 'None') {
+    return '';
+  } else if (license === 'The Unlicense') {
+    return '[The Unlicense](http://unlicense.org/)';
+  } else if (license === 'MIT License') {
+    return '[MIT License](https://opensource.org/licenses/MIT)';
+  } else if (license === 'Apache License 2.0') {
+    return '[Apache 2.0](https://opensource.org/licenses/Apache-2.0)';
+  } else if (license === 'Mozilla Public License') {
+    return '[Mozilla Public License](https://opensource.org/licenses/MPL-2.0)';
+  } 
 }
 
 // TODO: Create a function that returns the license section of README
@@ -71,13 +85,15 @@ function generateMarkdown(data) {
 
   ${renderLicenseSection(data.license)}
 
+  ${renderLicenseURL(data.license)}
+
   
 
   ## Questions
   Please Use the following links to contact me!
   
   [Github](https://github.com/${data.github})
-  [Email: ${data.email}](mailto:${data.email})
+  \n [Email: ${data.email}](mailto:${data.email})
 
 `;
 }

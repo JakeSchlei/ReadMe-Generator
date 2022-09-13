@@ -1,6 +1,6 @@
  
   
-  # Jake 
+  # README Generator
   
   [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
@@ -10,33 +10,36 @@
   - [Usage](#usage)
   - [Contributions](#contributions)
   - [Tests](#tests)
-  - [License](#License)
+  - [License](#license)
   - [Questions](#questions)
 
 
   ## Description
-  ;laksdjf
+  The README Generator is a CLI app that was built with node.js and Inquirer from the npm library. The apps intention is to capture user input from the command line and generate a high quality and professional looking README file.
 
   ## Installation
-  klsajdf
+  Please use Inquirer 8.24 for this project
 
   ## Usage
-  lksadjf
+  Once you have navigated to the project on the command line, type 'node index' to start that app and follow the prompts from there. Once finished with all of the questions the README file will generate and then be able to be viewed.
 
   ## Contributions
-  lkjsadf
+  N/A
 
   ## Tests
-  l;kasjdf
+  N/A
 
-  ## [License](#License) 
- This project is licensed under Unlicense
+  ## License 
+ This project is licensed under The Unlicense
+
+  [The Unlicense](http://unlicense.org/)
 
   
 
-  ## [Questions](#Questions)
+  ## Questions
   Please Use the following links to contact me!
   
-  [Github](https://github.com/;klajsdf)
-  [Email: lkasdjf](mailto:lkasdjf)
+  [Github](https://github.com/JakeSchlei)
+  
+ [Email: JakeSchlei@gmail.com](mailto:JakeSchlei@gmail.com)
 

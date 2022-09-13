@@ -49,7 +49,7 @@ const promptUser = data => {
       name: "license",
       message: "What license will be associated with this project?",
       choices: [
-        "Unlicense",
+        "The Unlicense",
         "MIT License",
         "Apache License 2.0",
         "Mozilla Public License",
