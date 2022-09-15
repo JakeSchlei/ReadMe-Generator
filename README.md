@@ -34,6 +34,8 @@
  This project is licensed under The Unlicense
 
   [The Unlicense](http://unlicense.org/)
+  
+  This project is not under any license at all, just wanted to provide an example for this section 
 
   
 
